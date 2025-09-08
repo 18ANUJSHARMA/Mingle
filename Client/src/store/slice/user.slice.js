@@ -1,20 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const initialState = {
-  value: 0,
-}
+
 
 export const userSlice = createSlice({
-  name: 'counter',
+  name: "user",
   initialState : {
     isAuthenticated: false,
   },
   reducers: {
-    
-  }
-})
+    Login :()=>{
+      console.log("hello login");
+    },
+  },
+});
 
 // Action creators are generated for each case reducer function
-export const { } = userSlice.actions
+export const {Login} = userSlice.actions;
 
-export default userSlice.reducer
+export default userSlice.reducer;
